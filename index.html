@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Look It Up!</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="php" type="text/php" href="./file.php">
+</head>
+<body>
+
+	<header>
+		<video autoplay loop class="video-background" muted plays-inline>
+			<source src="Final_Zoom_In_1.mp4" type="video/mp4">
+		</video>
+
+	<div class="nav">
+		<img src="logo.png" class="logo">
+
+		<ul class="menu">
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">GAMBLE</li>
+		<li><a href="#">CATEGORY</a></li>
+		<li><a href="#login" id="mbtn">SIGN IN</a></li>
+		<li><a href="#">SIGN UP</a></li>
+		</ul>
+	</div>
+	<div class="ms">
+		<h1>SO AMAZING IT'S ALMOST UNREAL!!</h1>
+		<a href="#" class="btn btn1">Contact</a>
+		<a href="#" class="btn btn1">Explore</a>
+	</div>
+
+		<div id="lg" class="login">
+		<img src="avatar.png" class="avatar">
+		<h1>Login</h1>
+		<span class="close">&times;</span>		
+		<form method="POST" action="file.php">
+			<p>User Name</p>
+			<input type="text" name="username" placeholder="Username">
+			<p>Email</p>
+			<input type="text" name="Email" placeholder="Email">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter password">
+			<input type="submit" name="Submit" value="Login">
+			<a href="#">Forgot password</a>
+		</form>
+	</div>
+	</header>
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
