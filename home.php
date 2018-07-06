@@ -63,26 +63,27 @@ include_once( "footer.php");
     <h2>Statistics</h2>
     <?php  
  $connect = mysqli_connect("localhost", "root", "", "look_it_up");  
- $query3 = "SELECT id, count(*) as number FROM franchise GROUP BY user_id";  
- $result = mysqli_query($connect, $query3);  
+
+ $query13 = "SELECT active, count(*) as number FROM user GROUP BY active ";  
+ $result = mysqli_query($connect, $query13);  
    ?>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
-          <script>
+           <script type="text/javascript">  
            google.charts.load('current', {'packages':['corechart']});  
            google.charts.setOnLoadCallback(drawChart);  
            function drawChart()  
            {  
                 var data = google.visualization.arrayToDataTable([  
-                          ['Id', 'Number'],  
+                          ['Active', 'Number'],  
                           <?php  
-                          while($row = mysqli_fetch_array($result))  
+                           while($row = mysqli_fetch_array($result))  
                           {  
-                               echo "['".$row["id"]."', ".$row["number"]."],";  
-                          }  
+                               echo "['".$row["active"]."',".$row["number"]."],";  
+                            }
                           ?>  
                      ]);  
                 var options = {  
-                      title: 'Percentage of Business and Owner',  
+                      title: 'Active /Inactive',  
                       //is3D:true,  
                       pieHole: 0.4  
                      };  
@@ -92,10 +93,10 @@ include_once( "footer.php");
            </script>  
        
            <br ><br >  
-            <h3 align="center" style="text-align: center;">Pie Chart Showing percentage of users with Businesses(Blue)and those without (red)</h3>
+            <h3 align="center" style="text-align: center;">Pie Chart Showing percentage of Active users(red) and Inactive Users</h3>
            <div style="width:900px; padding: 0; margin-left: 350px;">  
                  
-                <br />  
+                 
                 <div id="piechart" style="width: 500px; height: 500px;"></div>  
            </div>  
       
@@ -175,7 +176,7 @@ include_once( "footer.php");
 
 .section-dark{
   height: auto;
-   padding:50 50px;
+   padding:10 0px;
   background-color:#000000;
   color:#ddd;
 }
