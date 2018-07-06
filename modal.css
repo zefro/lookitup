@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400i,900i');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+span, .close3{
+  text-align: left;
+  cursor: pointer;
+  color: #fff;
+}
+body{
+  background: #424C55;
+  font-style: italic;
+  color: #424C55;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-weight: 400;
+}
+
+
+.profile-card, h2{
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+.business-card, h2{
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+span,.bt{
+  font-weight: 900;
+}
+
+.wrap{
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.wrap{
+  display: none; 
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cont{
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 20px;
+}
+.cont1{
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.profile-card{
+  width: 100%;
+  height: 60%;
+  background: #000000;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+.business-card{
+  width: 100%;
+  height: 30%;
+  background: #000000;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-card .img-container{
+  width: 105px;
+  height: 105px;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-card .img-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;/*30*/
+  left: 190%;/*120*/
+}
+
+.role p{
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+.bt{
+  background: #840202;
+  position: absolute;
+  bottom: 8%;
+  left: 17%;
+  border: 2px solid #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.bt2{
+  background: #840202;
+  position: absolute;
+  bottom: 8%;
+  left: 57%;
+  border: 2px solid #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+.bt3{
+  background: #840202;
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+  border: 2px solid #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.bt:hover{
+  color: #000000;
+   background: #ff8300;
+}
+.bt2:hover{
+  color: #000000;
+   background: #ff8300;
+}
+
+.bt3:hover{
+  color: #000000;
+   background: #ff8300;
+}
+
+.data{
+  width: 100%;
+  height: 13%;
+  background: #ff8300;
+}
+
+.data-content{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.quote{
+  padding: 15px 30px;
+}
+
+.quote p{
+  padding-bottom: 10px;
+}
+
+
+textarea{
+  text-decoration: none;
+  width: 99%;
+  height:100px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
